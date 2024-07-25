@@ -17,7 +17,7 @@ const Libros = () => {
           </div>
           <div>
             <Link to = "./prestar">
-                <button>Prestados</button>
+                <button>Prestar</button>
             </Link>
           </div>
           <div>

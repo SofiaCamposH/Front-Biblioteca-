@@ -15,6 +15,9 @@ import Prestamo from './Components/Prestamo-libros'
 import FormularioPrestamo from './Components/libroPrestamo';
 import Disponibles from './Components/librosDisponibles';
 import Reportes from './Components/reporte-libros';
+import FormularioCubiculo from './Components/cubi-prestamo';
+import FormularioComputadora from './Components/Compu-prestamo';
+
 
 
 const router = createBrowserRouter([
@@ -31,7 +34,15 @@ const router = createBrowserRouter([
       { path: "/Libros/prestar", element: <FormularioPrestamo /> },
       { path: "/Libros/Disponibles", element: <Disponibles /> },
       { path: "/Libros/Disponibles/prestar", element: <FormularioPrestamo /> },
-      { path: "/Libros/Reportes", element: <Reportes /> }
+      { path: "/Libros/Reportes", element: <Reportes /> },
+      { path: "/Cubiculos/Prestamo", element: <FormularioCubiculo /> },
+      { path: "/Computadoras/Prestamo", element: <FormularioComputadora /> },
+      
+
+      
+      
+
+      
 
   ]},
 

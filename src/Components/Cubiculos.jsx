@@ -11,7 +11,9 @@ const Cubiculos = () => {
         <div className="botones-cub">
           
           <div>
+          <Link to = "./Prestamo">
             <button>Préstamo</button>
+          </Link>
           </div>
           <div>
             <button>Prestados</button>

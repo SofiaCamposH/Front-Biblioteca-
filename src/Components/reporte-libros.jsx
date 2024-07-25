@@ -3,44 +3,28 @@ import { Link } from 'react-router-dom';
 
 
 function Reportes() {
-  const [nombreAlumno, setNombreAlumno] = useState('');
-  const [matricula, setMatricula] = useState('');
-  const [carrera, setCarrera] = useState('');
-  const [Reporte, setReporte] = useState('');
+  
+    return (
+        <div className="form-container">
+            <h2>Reportes</h2>
+            <form>
+                <label htmlFor="nombre">Nombre del alumno:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                
+                <label htmlFor="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" required />
+                
+                <label htmlFor="carrera">Carrera:</label>
+                <input type="text" id="carrera" name="carrera" required />
+                
+                <label htmlFor="isbn">Descripción del reporte:</label>
+                <input type="text" id="reporte" name="reporte " required />
+                
+                <button type="submit">Hacer reporte</button>
+            </form>
+        </div>
+    );
+};
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // Registrar préstamo en la base de datos (código no incluido)
-
-    alert('Préstamo registrado exitosamente!');
-
-    // Limpiar formulario
-    setNombreAlumno('');
-    setMatricula('');
-    setCarrera('');
-    setReporte('');
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2>Reporte de Libros</h2>
-
-      <label>Nombre del alumno:</label>
-      <input type="text" value={nombreAlumno} onChange={(e) => setNombreAlumno(e.target.value)} />
-
-      <label>Matrícula:</label>
-      <input type="text" value={matricula} onChange={(e) => setMatricula(e.target.value)} />
-
-      <label>Carrera:</label>
-      <input type="text" value={carrera} onChange={(e) => setCarrera(e.target.value)} />
-
-      <label>Reporte:</label>
-      <input type="text" value={Reporte} onChange={(e) => setReporte(e.target.value)} />
-
-      <button type="submit">Crear reporte</button>
-    </form>
-  );
-}
 
 export default Reportes;

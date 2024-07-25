@@ -1,0 +1,66 @@
+/* Estilos generales */
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-container {
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Tabla de libros */
+.tabla-libros {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Botones */
+.button {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales (personalizables) */
+/* Para hacer la tabla más responsiva */
+@media (max-width: 768px) {
+  table th, table td {
+    display: block;
+    width: 100%;
+  }
+
+  table td {
+    text-align: right;
+  }
+
+  table tr {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Para darle un estilo más moderno a los botones */
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* Puedes agregar más estilos personalizados según tus preferencias */
